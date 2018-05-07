@@ -1,26 +1,10 @@
 /* RESET LAYOUT AND ADD COLORS */
-body {
-  margin: 0;
-  padding: 0;
-  max-width: inherit;
-  background: #fff;
-  color: #4a4a4a;
-}
 header, footer {
   font-size: large;
   text-align: center;
   padding: 0.3em 0;
   background-color: #4a4a4a;
   color: #f9f9f9;
-}
-nav {
-  background: #eee;
-}
-main {
-  background: #f9f9f9;
-}
-aside {
-  background: #eee;
 }
 
 /* GRID-BASED LAYOUT */
@@ -29,6 +13,11 @@ body {
   min-height: 100vh;
   grid-template-columns: 200px 1fr 150px;
   grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+  padding: 0;
+  max-width: inherit;
+  background: #fff;
+  color: #4a4a4a;
 }
 header {
   grid-row: 1;
@@ -38,16 +27,19 @@ nav {
   grid-row: 2;
   grid-column: 1 / 2;
   padding: 0 10px;
+  background: #eee;
 }
 main {
   grid-row: 2;
   grid-column: 2 / 3;
   padding: 0 20px;
+  background: #f9f9f9;
 }
 aside {
   grid-row: 2;
   grid-column: 3 / 4;
   padding: 0 10px;
+  background: #eee;  
 }
 footer {
   grid-row: 3;
